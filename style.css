@@ -73,19 +73,12 @@ body{
 ========================== */
 
 .hero{
-
     background:linear-gradient(135deg,#0D3B66,#1D5FA7);
-
     color:white;
-
     text-align:center;
-
     padding:55px 20px;
-
     position:relative;
-
     overflow:hidden;
-
 }
 
 .hero h1{
@@ -442,4 +435,15 @@ padding:14px 32px;
 
     color:#0f5132;
 
+}
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero a,
+.hero button,
+.hero input{
+    position:relative;
+    z-index:3;
 }
