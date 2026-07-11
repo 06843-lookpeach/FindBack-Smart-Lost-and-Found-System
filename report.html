@@ -1,0 +1,187 @@
+ <!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report | FindBack</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg shadow-sm">
+
+<div class="container">
+
+
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+
+
+<img src="assets/images/school-logo.png" class="logo">
+
+
+<div class="ms-3">
+
+<h5 class="m-0 text-white fw-bold">
+FindBack
+</h5>
+
+
+<small class="text-light">
+Smart Lost & Found System
+</small>
+
+
+</div>
+
+
+</a>
+
+
+</div>
+
+</nav>
+
+
+
+<section class="container py-5">
+
+
+<h2 class="fw-bold mb-4">
+
+<i class="bi bi-pencil-square"></i>
+
+แจ้งข้อมูลสิ่งของ
+
+</h2>
+
+
+
+
+<div class="card shadow p-4">
+
+
+<form>
+
+
+<label class="form-label">
+ประเภทการแจ้ง
+</label>
+
+
+
+<label class="form-label">
+ชื่อสิ่งของ
+</label>
+
+
+<input
+id="name"
+class="form-control mb-3"
+placeholder="เช่น กระเป๋านักเรียนสีดำ">
+
+
+
+
+
+<label class="form-label">
+สถานที่
+</label>
+
+
+<input
+id="location"
+class="form-control mb-3"
+placeholder="เช่น อาคาร 3">
+
+
+
+
+<label class="form-label">
+วันที่
+</label>
+
+
+<input
+id="date"
+type="date"
+class="form-control mb-3">
+
+
+
+
+<label class="form-label">
+รายละเอียดเพิ่มเติม
+</label>
+
+
+<textarea
+id="detail"
+class="form-control mb-3"
+rows="4">
+
+</textarea>
+
+
+
+
+<label class="form-label">
+ช่องทางติดต่อ
+</label>
+
+
+<input
+id="contact"
+class="form-control mb-4"
+placeholder="LINE / ห้องเรียน / เบอร์โทร">
+
+
+<label class="form-label">
+รูปภาพสิ่งของ
+</label>
+
+<input
+id="image"
+type="file"
+class="form-control mb-4"
+accept="image/*">
+
+
+
+<button 
+type="button"
+onclick="sendReport()"
+class="btn btn-primary w-100">
+
+ส่งข้อมูล
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+<script src="report.js"></script>
+
+</body>
+
+</html>
